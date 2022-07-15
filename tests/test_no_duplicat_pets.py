@@ -2,7 +2,7 @@ from conftest import *
 
 
 def test_no_duplicate_pets(go_to_my_pets):
-    """Поверка, что на странице со списком моих питомцев нет повторяющихся питомцев"""
+    """Поверка что на странице со списком моих питомцев нет повторяющихся питомцев"""
 
     # Сохраняем в переменную pet_data элементы с данными о питомцах
     pet_data = pytest.driver.find_elements_by_css_selector('.table.table-hover tbody tr')
