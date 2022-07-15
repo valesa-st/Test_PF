@@ -2,7 +2,7 @@ from conftest import *
 
 
 def test_all_pets_are_present(go_to_my_pets):
-    """Проверяем, что на странице со списком моих питомцев есть питомцы"""
+    """Проверяем что на странице со списком моих питомцев есть питомцы"""
 
     # Сохраняем в переменную statistic элементы статистики
     statistic = pytest.driver.find_elements_by_css_selector(".\\.col-sm-4.left")
