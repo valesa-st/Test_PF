@@ -2,7 +2,7 @@ from conftest import *
 
 
 def test_show_my_pets(go_to_my_pets):
-    """Проверка что мы находимся на странице Мои питомцы"""
+    """Проверка, что мы находимся на странице Мои питомцы"""
 
     # Нажимаем на ссылку "Мои питомцы"
     pytest.driver.find_element_by_link_text("Мои питомцы").click()
