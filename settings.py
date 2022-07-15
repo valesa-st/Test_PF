@@ -1,2 +1,2 @@
-valid_email = 'ваш email'
-valid_password = 'ваш password'
+valid_email = 'Ваш e-mail'
+valid_password = 'Ваш password'
