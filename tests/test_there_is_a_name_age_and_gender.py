@@ -8,7 +8,7 @@ def test_there_is_a_name_age_and_gender(go_to_my_pets):
     pet_data = pytest.driver.find_elements_by_css_selector('.table.table-hover tbody tr')
 
     # Перебираем данные из pet_data, оставляем имя, возраст и породу, остальное изменяем на пустую строку
-    # и разделяем пробелом. Находим количество элементов в получившемся списке и сравниваем их
+    # и разделяем пробелом.Находим количество элементов в получившемся списке и сравниваем их
     # с ожидаемым результатом
     for i in range(len(pet_data)):
         data_pet = pet_data[i].text.replace('\n', '').replace('×', '')
