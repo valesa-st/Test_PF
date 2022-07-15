@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 def testing():
     pytest.driver = webdriver.Chrome('./chromedriver.exe')
     pytest.driver.implicitly_wait(10)
-    # Переходим на страницу авторизаци
+    # Переходим на страницу авторизации
     pytest.driver.get('http://petfriends.skillfactory.ru/login')
     yield
     pytest.driver.quit()
