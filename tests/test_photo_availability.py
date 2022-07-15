@@ -2,7 +2,7 @@ from conftest import *
 
 
 def test_photo_availability(go_to_my_pets):
-    """Поверка что на странице со списком моих питомцев хотя бы у половины питомцев есть фото"""
+    """Поверка, что на странице со списком моих питомцев хотя бы у половины питомцев есть фото"""
 
     # Сохраняем в переменную statistic элементы статистики
     statistic = pytest.driver.find_elements_by_css_selector(".\\.col-sm-4.left")
