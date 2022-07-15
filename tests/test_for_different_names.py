@@ -2,7 +2,7 @@ from conftest import *
 
 
 def test_all_pets_have_different_names(go_to_my_pets):
-    """Поверяем, что у всех питомцев на странице с моими питомцами разные имена """
+    """Поверяем что у всех питомцев на странице с моими питомцами разные имена """
 
     # В переменную pet_data сохраняем элементы с данными о питомцах
     pet_data = pytest.driver.find_elements_by_css_selector('.table.table-hover tbody tr')
